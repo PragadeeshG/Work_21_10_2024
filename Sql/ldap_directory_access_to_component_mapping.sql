@@ -1,0 +1,16 @@
+create table if not exists ldap_directory_access_to_component_mapping(
+core_user Integer not null,
+ldap_directory_access_id Integer null,
+principal Integer null,
+session_manager varchar(255) null,
+org_unit_code Integer null,
+object_class_indicator char null,
+is_active char null,
+cn_component varchar(255) null,
+sn_component varchar(255) null,
+uid varchar(255) null,
+user_password varchar(255) null,
+creation_date varchar(255) null,
+modified_date varchar(255) null,
+entity_state varchar(255) null,
+constraint ldap_directory_access_to_component_mapping_pk primary key(core_user));
